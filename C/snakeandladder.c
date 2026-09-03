@@ -64,20 +64,30 @@ int main(){
             printf("You rolled %d\n \n", rngp1);
             player1 += rngp1;
             int p1I = player1/10;
+            int rev1I = 10 -p1I;
             int p1J = player1%10;
+            if (p1I%2 == 0){
+                strcpy(board[rev1I][p1J],P1);}
+            else{
+                int revJ = 9 - p1J;
+                strcpy(board[rev1I][revJ],P1);}    
             
-            strcpy(board[p1I][p1J],P1);
 
             printf("Player 2's turn (press enter)\n");
-
+ 
             while (getchar() != '\n'){}
             int rngp2 = (rand() % 6) + 1;
             printf("You rolled %d\n \n", rngp2);
             player2 += rngp2;
             int p2I = player2/10;
             int p2J = player2%10;
+            int rev2I = 9 - p2I;
             
-            strcpy(board[p2I][p2J],P2);
+            if (p1I%2 == 0){
+                strcpy(board[rev2I][p2J],P2);}
+            else{
+                int revJ = 9 - p2J;
+                strcpy(board[rev2I][revJ],P2);}   
 
             printarr(board);
         }
