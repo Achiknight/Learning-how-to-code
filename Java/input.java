@@ -1,5 +1,5 @@
 package Java;
-import java.util.*;
+import java.util.Scanner;
 
 public class input {
     public static void main(String[] args) {
@@ -7,5 +7,6 @@ public class input {
         System.out.print("Enter your number: ");
         int num = sc.nextInt();
         System.out.println("your number is " + num);
+        sc.close();
     }
 }
