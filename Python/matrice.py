@@ -22,18 +22,18 @@ while True:
         temp = (A*A*A)
         print(f"\n{temp}\n")        
     
-    if ch == 2:
+    elif ch == 2:
         A = get_array()
         temp = (A*A)
         print(f"\n{temp}\n")
     
-    if ch == 3:
+    elif ch == 3:
             A = get_array()
             num = int(input("Enter the scalar: "))
             temp = (num*A)
             print(f"\n{temp}\n")       
     
-    if ch == 4:
+    elif ch == 4:
             A = get_array()
             B = get_array()
             temp = (A-B)
