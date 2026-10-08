@@ -3,15 +3,10 @@ import cv2 as cv
 
 image = cv.imread("Ishtar.jpg")
 
-rez = cv.resize(image,(320,80))
+gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
-crop = image[100:400,200:700]
-
-
+cv.imshow("gray",gray)
 cv.imshow("Ishtar.jpg",image)
-cv.imshow("rez",rez)
-cv.imshow("crop",crop)
-
 
 
 cv.waitKey(0)
