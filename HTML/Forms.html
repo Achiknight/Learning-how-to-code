@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Forms IN HTML</title>
+    </head>
+
+    <body>
+        <header><H1>Application To join Chaddas</H1></header>
+        <main>
+            <form action="/subit.py">
+                <div>
+                    <label for="Name"> Name</label>
+                    <input id="Name" type="text" placeholder="Enter Your Name">
+                </div>
+                <div>
+                    <label for="IGN">IGN</label>
+                    <input id="IGN" type="text" placeholder="Enter your IN game NAME">
+                </div>
+                <div>
+                    <label for="Phone"> Phone</label>
+                    <input id="Phone" type="number">
+                </div>
+                <p></p>
+                <div>
+                    <label for="Rank">Valo Rank</label>
+                    <select name="Rank" id="Rank">
+                        <option value="" disabled selected>Choose your rank</option>
+                        <option value="Iron"> Iron</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Ascendant">Ascendant</option>
+                    </select>
+                </div>
+                <p></p>
+                <div>
+                    <label for="Date">Date of join</label>
+                    <input type="date" name="Date" id="Date">
+                </div>
+
+
+
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
