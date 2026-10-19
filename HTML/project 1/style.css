@@ -1,0 +1,139 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #282c3f;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Navigation */
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #fc8019;
+}
+
+/* Main */
+main {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        to bottom,
+        #fff7f0,
+        #ffffff
+    );
+}
+
+/* Search Form */
+main form {
+    width: 100%;
+    max-width: 600px;
+}
+
+main input {
+    width: 100%;
+    padding: 18px 22px;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+main input:focus {
+    border-color: #fc8019;
+    box-shadow: 0 0 8px rgba(252, 128, 25, 0.2);
+}
+
+main input::placeholder {
+    color: #93959f;
+}
+
+/* Footer */
+footer {
+    background-color: #171a29;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    header ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        min-height: 65vh;
+    }
+}
+main {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+main h1 {
+    font-size: 48px;
+    color: #fc8019;
+}
+
+main form {
+    width: 100%;
+    max-width: 600px;
+}
